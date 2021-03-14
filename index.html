@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js" async></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--ADD INPUT OF TYPE FILE WITH THE MULTIPLE OPTION-->
+    <p>
+        <input type="file" id="file" multiple />
+    </p>
+
+    <!--SHOW RESULT HERE-->
+    <p id="fp">
+        Total Files:
+    </p>
+    <table id="myTab">
+        <tr>
+            <th>No.</th>
+            <th>Name</th>
+            <th>Size</th>
+        </tr>
+    </table>
+    <br>
+    <table id="myTab1">
+        <tr>
+            <th>mp4 video(s)</th>
+            <th>png image(s)</th>
+            <th>jpg image(s)</th>
+            <th>jpeg image(s)</th>
+        </tr>
+    </table>
+
+    <!-- <p id="fp1">
+        This file contains :
+    </p> -->
+
+    <p>
+        <input type="submit" value="Show Details" onclick="FileDetails()">
+    </p>
+</body>
+
+</html>
