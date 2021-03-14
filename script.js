@@ -22,12 +22,7 @@ function FileDetails () {
 
             var fname = files[i].name;      // THE NAME OF THE FILE.
             var fsize = files[i].size;      // THE SIZE OF THE FILE.
-            //var fsize = fi.files.item(i).size;      // THE SIZE OF THE FILE.
             myArr.push(fname);
-            // SHOW THE EXTRACTED DETAILS OF THE FILE.
-            /* document.getElementById('fp').innerHTML =
-                document.getElementById('fp').innerHTML + '<br /> ' +
-                fname + ' (<b>' + fsize + '</b> bytes)'; */
             
             //Display content in a table
             var tr = document.createElement('tr');
@@ -84,11 +79,6 @@ function FileDetails () {
         tr.appendChild(td4);
 
         document.getElementById("myTab1").appendChild(tr);
-        
-        // SHOW THE EXTRACTED DETAILS OF THE FILE.
-        /* document.getElementById('fp1').innerHTML = "This file contains :" + '<br /> ' + mp4Arr.length + " mp4 video(s)." + '<br /> ' + pngArr.length + " png image(s)." + '<br /> ' + jpgArr.length + " jpg image(s)." + '<br /> ' + jpegArr.length + " jpeg image(s)."; */
-        /* document.getElementById('fp').innerHTML + '<br /> ' +
-        fname + ' (<b>' + fsize + '</b> bytes)'; */
     }
     else {
         alert('Please select a file.')
